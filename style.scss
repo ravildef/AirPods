@@ -9,12 +9,11 @@ body {
 #header {
   background: #FFFFFF;
   padding: 20px 0;
-  transition: .1s;
+  transition: .5s;
 
   &:hover {
     transform: translateY(-35px);
     box-shadow: 0 5px 25px 5px white;
-    border: 3px solid red;
     background: white;
 
   }
@@ -127,8 +126,49 @@ body {
           display: flex;
           margin: 30px 0 0 10px;
 
-          &__nav {
 
+          &__radio {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(255, 255, 255, 0.29);
+
+            &--one {
+              box-sizing: border-box;
+
+              width: 30px;
+              height: 30px;
+              margin-left: 3px;
+              margin-top: 3px;
+              border-radius: 50%;
+              border: 1px solid rgba(255, 255, 255, 0.63);
+
+              &__two {
+                box-sizing: border-box;
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                left: 6px;
+                top: 6px;
+                border-radius: 50%;
+                border: 0.5px solid rgb(255, 255, 255);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                  position: absolute;
+                  width: 17px;
+                  height: 17px;
+                  color: orange;
+                  border-radius: 2px;
+                  left: 7px;
+                  top: 5px;
+
+                }
+              }
+            }
           }
         }
 
@@ -139,7 +179,7 @@ body {
           border-radius: 10px;
           font-weight: 700;
           font-size: 15px;
-          color: #000000;
+          color: #FFFFFF;
           margin-top: 100px;
           transition: .4s;
         }
@@ -170,7 +210,7 @@ body {
           line-height: 14px;
           color: #FFFFFF;
           padding-top: 10px;
-          padding-left: 10px;
+          padding-left: 40px;
           transition: .4s;
 
           &:hover {
@@ -193,9 +233,7 @@ body {
 
         &:hover {
           transform: translateY(-35px);
-          box-shadow: 0 5px 25px 5px rgb(255, 0, 0);
-          border: 3px solid white;
-          background: rgba(255, 0, 0, 0.5);
+
 
         }
       }
@@ -227,6 +265,8 @@ body {
 
     &--group {
       img {
+        transition: .5s;
+
         &:hover {
           transform: translateY(-35px);
           box-shadow: 0 5px 25px 5px red;
@@ -357,13 +397,20 @@ body {
     &--group {
       display: flex;
 
-      &__input {
+      &__radio {
         color: transparent;
         width: 82px;
         height: 82px;
         border: 6px solid #F7A325;
         background: #F7A325;
-        border-radius: 15px;
+        border-radius: 50%;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: .5s;
 
         &:hover {
@@ -397,9 +444,6 @@ body {
 
       &:hover {
         transform: translateY(-35px);
-        box-shadow: 0 5px 25px 5px red;
-        border: 3px solid white;
-        background: red;
 
       }
 
@@ -420,9 +464,6 @@ body {
 
         &:hover {
           transform: translateY(-35px);
-          box-shadow: 0 5px 25px 5px red;
-          border: 3px solid white;
-          background: red;
 
         }
       }
@@ -449,9 +490,6 @@ body {
 
         &:hover {
           transform: translateY(-35px);
-          box-shadow: 0 5px 25px 5px red;
-          border: 3px solid white;
-          background: red;
 
         }
       }
@@ -477,12 +515,10 @@ body {
 #img {
 
   .img {
-    margin: 100px 180px;
+    margin-top: 60px;
+    margin-left: 60px;
 
     &--group {
-
-      width: 111px;
-      height: 631px;
 
       img {
 
@@ -496,7 +532,7 @@ body {
     font-weight: 700;
     font-size: 30px;
     color: #FFFFFF;
-    text-align: center;
+    padding-left: 650px;
     margin: 30px 0;
     transition: .6s;
 
@@ -519,7 +555,7 @@ body {
       height: 618px;
       left: 135px;
       top: 2882px;
-      background: #363636;
+      background: rgba(255, 255, 255, 0.09);
       border-radius: 87px;
       transition: .4s;
 
@@ -554,7 +590,7 @@ body {
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
-        color: #000000;
+        color: #FFFFFF;
         border-radius: 10px;
         border: none;
         margin: 15px 80px;
@@ -628,10 +664,6 @@ body {
 
         &:hover {
           transform: translateY(-35px);
-          box-shadow: 0 5px 25px 5px red;
-          border: 3px solid white;
-          background: red;
-
         }
       }
 
@@ -641,9 +673,6 @@ body {
 
         &:hover {
           transform: translateY(-35px);
-          box-shadow: 0 5px 25px 5px red;
-          border: 3px solid white;
-          background: red;
 
         }
       }
@@ -674,7 +703,6 @@ body {
           box-shadow: 0 5px 25px 5px red;
           border: 3px solid white;
           background: red;
-
         }
       }
 
@@ -708,7 +736,7 @@ body {
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;
-        color: #000000;
+        color: #FFFFFF;
         margin: 20px 0;
         transition: .4s;
       }
@@ -742,11 +770,11 @@ body {
 
   &:hover {
     transform: translateY(-35px);
-    box-shadow: 0 5px 25px 5px red;
-    border: 3px solid white;
-    background: red;
+    box-shadow: 0 5px 25px 5px white;
+    background: white;
 
   }
+
 
   .footer-group {
     padding-left: 600px;
